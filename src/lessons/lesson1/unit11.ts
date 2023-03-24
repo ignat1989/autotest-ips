@@ -1,6 +1,13 @@
-const callback = function (a: number, b: number) {
-    console.log(a + b)
+const sum = function (firstNumber: number, secondNumber: number) {
+  return firstNumber + secondNumber;
+};
+const subtraction = function (firstNumber: number, secondNumber: number) {
+  return firstNumber - secondNumber;
+};
+
+const multiply;
+
+function calc(firstNum: number, secondNum: number, callback: Function) {
+  return callback(3, 5);
 }
-console.log('start')
-let sumOfNumbers = callback(2, 5)
-console.log('end')
+console.log(calc);
